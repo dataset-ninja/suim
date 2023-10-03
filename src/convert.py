@@ -73,7 +73,7 @@ def convert_and_upload_supervisely_project(
     ### Function should read local dataset and upload it to Supervisely project, then return project info.###
     batch_size = 30
 
-    dataset_path = "/home/alex/DATASETS/TODO/Underwater Imagery (SUIM)/archive"
+    dataset_path = "SUIM"
     images_folder = "images"
     masks_folder = "masks"
     images_ext = ".jpg"
