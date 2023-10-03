@@ -1,0 +1,1 @@
+SUIM: Semantic Segmentation of Underwater Imagery is under [MIT](https://spdx.org/licenses/MIT.html) license.
