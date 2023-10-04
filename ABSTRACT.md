@@ -8,3 +8,5 @@ The SUIM dataset has 1525 RGB images for training and validation; another 110 te
 This figure demonstrates the population of each object category, their pairwise correlations, and the distributions of RGB channel intensity values in the SUIM dataset.
 
 All images of the SUIM dataset are pixel-annotated by seven human participants. Authors followed the guidelines discussed in [The Ocean Animal Encyclopedia](https://oceana.org/marine-life/) and [“Marine Species Identification Portal](http://species-identification.org/) for classifying potentially confusing objects of interest such as plants/reefs, vertebrates/invertebrates, etc.
+
+<i>Please note, that some masks include bad data. Check full list at [GitHub page](https://github.com/dataset-ninja/suim/blob/main/src/convert.py#L83)</i>
