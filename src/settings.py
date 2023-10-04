@@ -21,7 +21,7 @@ HIDE_DATASET = True  # set False when 100% sure about repo quality
 # * After uploading to instance ##
 ##################################
 LICENSE: License = License.MIT()
-APPLICATIONS: List[Union[Industry, Domain, Research]] = [Industry.Entertainment(is_used=False),Industry.Tourism(is_used=False),Research.Environmental(is_used=False),Industry.Robotics(is_used=False)]
+APPLICATIONS: List[Union[Industry, Domain, Research]] = [Industry.Entertainment(is_used=True),Industry.Tourism(is_used=True),Research.Environmental(is_used=True),Industry.Robotics(is_used=True)]
 CATEGORY: Category = Category.Environmental(extra=Category.Robotics())
 
 CV_TASKS: List[CVTask] = [CVTask.SemanticSegmentation()]
