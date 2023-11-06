@@ -21,8 +21,8 @@ HIDE_DATASET = False  # set False when 100% sure about repo quality
 # * After uploading to instance ##
 ##################################
 LICENSE: License = License.MIT()
-APPLICATIONS: List[Union[Industry, Domain, Research]] = [Industry.Entertainment(is_used=True),Industry.Tourism(is_used=True),Research.Environmental(is_used=True),Industry.Robotics(is_used=True)]
-CATEGORY: Category = Category.Environmental(extra=Category.Robotics())
+APPLICATIONS: List[Union[Industry, Domain, Research]] = [Research.Environmental(),Industry.Robotics()]
+CATEGORY: Category = Category.Environmental(extra=[Category.Robotics(), Category.Biology()])
 
 CV_TASKS: List[CVTask] = [CVTask.SemanticSegmentation()]
 ANNOTATION_TYPES: List[AnnotationType] = [AnnotationType.SemanticSegmentation()]
@@ -53,10 +53,11 @@ CLASS2COLOR: Optional[Dict[str, List[str]]] = None
 # Use dict key to specify name for a button
 PAPER: Optional[Union[str, List[str], Dict[str, str]]] = ["https://arxiv.org/abs/2004.01241"]
 BLOGPOST: Optional[Union[str, List[str], Dict[str, str]]] = None
-REPOSITORY: Optional[Union[str, List[str], Dict[str, str]]] = {"GitHub Page":"https://github.com/xahidbuffon/SUIM", "Kaggle Source":"https://www.kaggle.com/datasets/ashish2001/semantic-segmentation-of-underwater-imagery-suim"}
+REPOSITORY: Optional[Union[str, List[str], Dict[str, str]]] = {"GitHub":"https://github.com/xahidbuffon/SUIM", "Kaggle":"https://www.kaggle.com/datasets/ashish2001/semantic-segmentation-of-underwater-imagery-suim", "Project Page":"https://irvlab.cs.umn.edu/image-segmentation/suim"}
 
 CITATION_URL: Optional[str] = "https://github.com/xahidbuffon/SUIM#bibliography-entry"
 AUTHORS: Optional[List[str]] = ["Md Jahidul Islam", "Chelsey Edge", "Yuyang Xiao", "Peigen Luo", "Muntaqim Mehtaz", "Christopher Morse", "Sadman Sakib Enan", "Junaed Sattar"]
+AUTHORS_CONTACTS: Optional[List[str]] = ["https://xahidbuffon.github.io/", "jahid@ece.ufl.edu"]
 
 ORGANIZATION_NAME: Optional[Union[str, List[str]]] = ["University of Minnesota"]
 ORGANIZATION_URL: Optional[Union[str, List[str]]] = ["https://twin-cities.umn.edu/home"]
@@ -110,6 +111,7 @@ def get_settings():
     settings["repository"] = REPOSITORY
     settings["citation_url"] = CITATION_URL
     settings["authors"] = AUTHORS
+    settings["authors_contacts"] = AUTHORS_CONTACTS
     settings["organization_name"] = ORGANIZATION_NAME
     settings["organization_url"] = ORGANIZATION_URL
     settings["slytagsplit"] = SLYTAGSPLIT
