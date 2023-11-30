@@ -1,6 +1,6 @@
 Dataset **SUIM** can be downloaded in [Supervisely format](https://developer.supervisely.com/api-references/supervisely-annotation-json-format):
 
- [Download](https://assets.supervisely.com/supervisely-supervisely-assets-public/teams_storage/R/5/VH/t88rcCi1nmmtabykb6Xi0FJTA3IqoWa4nMvbXXoQOUQrGkGjO5SL9ipT6SXSpbljUuboauu8qycQsr1y2b1sVHyt19d3IFbPSRZ2CohRZLcexPAUTSGcSr42bDBt.tar)
+ [Download](https://www.dropbox.com/scl/fi/xd9cubhw8qd05ntnk4t0r/suim-DatasetNinja.tar?rlkey=7veo6vtdnjbdbno27040z0lt4&dl=1)
 
 As an alternative, it can be downloaded with *dataset-tools* package:
 ``` bash
